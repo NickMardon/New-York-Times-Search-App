@@ -13,8 +13,9 @@ var articlesArray = []
 searchBtn.on("click", function(event) {
     event.preventDefault();
     // take value from searchInput
-    searchTerm = searchTerm.trim()
-    
+    searchTerm = searchTerm.val().trim()
+    // take number of articles
+
 })
 
 
@@ -32,7 +33,7 @@ function displayArticles() {
     topArticles.empty();
     // loop through array of found articles
     for (let i = 0; i < articlesArray.length; i++) {
-        var article = array[i];
+        var article = articlesArray[i];
         
     }
 
